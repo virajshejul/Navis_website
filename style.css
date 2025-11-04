@@ -1,0 +1,530 @@
+@font-face {
+    font-family: pro;
+    src: url(./assets/font.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pro;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 10px 3vw;
+}
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 12vh 120vh;
+}
+
+.hero nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.left-nav {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.left-nav img {
+    height: 40%;
+}
+
+.left-nav h1 {
+    font-size: 2vw;
+    font-weight: 900;
+}
+
+.nav-mid {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.nav-mid h2 {
+    font-size: 1.2vw;
+}
+
+.nav-mid h2 a {
+    color: black;
+    text-decoration: none;
+    transition: all ease .2s;
+}
+
+.nav-mid h2 a:hover {
+    color: rgb(123, 123, 123);
+}
+
+.right-nav {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1vw;
+}
+
+.right-nav button:nth-child(1) {
+    padding: .9vw 1.7vw;
+    border: 1px solid #0061FE;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1vw;
+    color: #0061FE;
+    background-color: transparent;
+    transition: all ease .2s;
+}
+
+.right-nav button:nth-child(1):hover {
+    background-color: #0061FE;
+    color: white;
+}
+
+.right-nav button:nth-child(2) {
+    padding: .9vw 2vw;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1vw;
+    background-color: #0061FE;
+    color: white;
+    border: none;
+    outline: 1px solid #0061FE;
+    transition: all ease .2s;
+}
+
+.right-nav button:nth-child(2):hover {
+    background-color: transparent;
+    color: #0061FE;
+}
+
+.hero-contents {
+    background-color: #F0F1F4;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "hero-heading hero-section"
+        "hero-img hero-img";
+    border-radius: 10px;
+}
+
+.hero-heading {
+    grid-area: hero-heading;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-heading h1 {
+    font-size: 3.9vw;
+}
+
+.hero-section {
+    grid-area: hero-section;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 2vw;
+    gap: 1vw;
+}
+
+.hero-section h3 {
+    line-height: 1.4vw;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1vw;
+}
+
+.hero-btns button:nth-child(1) {
+    padding: .9vw 1.7vw;
+    border: 1px solid #0061FE;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2vw;
+    color: white;
+    background-color: #0061FE;
+    transition: all ease .2s;
+}
+
+.hero-btns button:nth-child(1):hover {
+    background-color: transparent;
+    color: #0061FE;
+}
+
+.hero-btns button:nth-child(2) {
+    padding: .9vw 2vw;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2vw;
+    background-color: transparent;
+    color: #0061FE;
+    border: none;
+    outline: 1px solid #0061FE;
+    transition: all ease .2s;
+}
+
+.hero-btns button:nth-child(2):hover {
+    background-color: #0061FE;
+    color: white;
+}
+
+.hero-img {
+    grid-area: hero-img;
+    padding: 1vw;
+}
+
+.hero-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.page2 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 30vh 70vh;
+}
+
+.page2-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page2-numbers div {
+    width: 10%;
+}
+
+.page2-numbers div h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+.page2-numbers div h4 {
+    font-size: 1vw;
+    text-align: center;
+    color: rgb(168, 168, 168);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.page2-contents {
+    background-color: #F0F1F4;
+    border-radius: 10px;
+    padding: 2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-page2 {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-page2 button {
+    padding: .9vw 1.7vw;
+    width: 20%;
+    border-radius: 30px;
+    font-size: 1vw;
+    border: none;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+
+.page2-para {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page2-para h1 {
+    font-size: 3vw;
+    text-align: left;
+}
+
+.page2-para p {
+    font-size: 1.2vw;
+    color: rgb(117, 117, 117);
+}
+
+.right-page2 {
+    height: 100%;
+    width: 43%;
+    border-radius: 15px;
+    background-color: #CFD3D4;
+}
+
+.right-page2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.page3-up {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vw;
+}
+
+.page3-up button {
+    padding: .9vw 1.7vw;
+    width: 10%;
+    border-radius: 30px;
+    font-size: 1vw;
+    border: none;
+    outline: 1px solid black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.page3-up-contents {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page3-heading {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.page3-heading h1 {
+    font-size: 2.5vw;
+}
+
+.page3-about {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    padding: 15px 0;
+}
+
+.page3-about p {
+    font-size: 1.3vw;
+    color: rgb(117, 117, 117);
+}
+
+.page3-img-containers {
+    height: 100vh;
+    width: 100%;
+    padding: 1vw 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1vw;
+    justify-items: center;
+}
+
+.page3-img {
+    width: 85%;
+    border-radius: 10px;
+    background-color: #CFD3D4;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.page3-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-card {
+    height: 100%;
+    width: 100%;
+    background-color: #0162FC;
+    padding: 2vw 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    opacity: 0;
+    bottom: -100%;
+    z-index: 10;
+    transition: all ease .5s;
+}
+
+.page3-img:hover .img-card {
+    opacity: 1;
+    z-index: 10;
+    bottom: 0;
+}
+
+.img-card-heading h2 {
+    color: white;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.img-card-heading h5 {
+    color: rgb(205, 205, 205);
+    font-size: 1.2vw;
+}
+
+.img-card-about {
+    width: 100%;
+}
+
+.img-card-about p {
+    color: rgb(205, 205, 205);
+    font-size: 1.2vw;
+}
+
+.img-card-links {
+    display: flex;
+    align-items: end;
+    gap: 1vw;
+}
+
+.img-card-links a {
+    text-decoration: none;
+}
+
+.img-card-links a i {
+    font-size: 1.5vw;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.page4 {
+    min-height: 70vh;
+    width: 100%;
+    margin-top: 2vw;
+    display: flex;
+    padding: 0vw 1.5vw;
+}
+
+.get-in-touch {
+    height: 70vh;
+    width: 50%;
+    border: 2px solid white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page4-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.page4-top button {
+    padding: .9vw 1.7vw;
+    width: 20%;
+    border-radius: 30px;
+    font-size: 1vw;
+    border: none;
+    outline: 1px solid black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.page4-top h1 {
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.page4-btm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+.links h3 {
+    color: #5c5c5c;
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+.links h2 {
+    font-size: 1.6vw;
+    font-weight: 100;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links h2 {
+    padding: 8px 10px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.map {
+    height: 70vh;
+    width: 50%;
+    background-color: red;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
